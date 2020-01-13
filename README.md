@@ -1,6 +1,23 @@
 # mlflow-end-to-end
 MLflow end-to-end demo (tracking, projects, model) with Azure Databricks
 
+# Primary components
+We're going to demo the three **core** components that make up mlflow: <br>
+![MLflow](https://i.imgur.com/vulSrq4.png).<br>
+  
+**Note**: you don't have to use all three, each feature can be used independently. <br>
+  
+#### Tracking
+This allows us to **log all aspects of the ML process** - like _different hyperparameters_ we tried, _evaluation metrics_, as well as the code we ran - alongside other arbitrary artifacts such as _test data_. <br>
+
+This also provides a _leaderboard-style UI_ that makes it easy to see which model performed the best.
+
+#### Projects
+These are all about **reproducibility and sharing**. They combine _GIT_, the environment/model framework, either _conda_ or _docker_ and the specification that makes the code re-runnable. 
+
+#### Models
+An abstraction that allows us to **create/export models** from any open source framework via the _Tracking_ and _Projects_ abstractions. We can also export them to a standard format that can be deployed to any number of systems. Since most deployment systems use some sort of container based solution (e.g. _AzureML_ or _Sagemaker_), models make easy deployments to these systems - or we can deploy directly to _Kubernetes_ or _Azure Container Registry_.
+
 # Agenda
 
 **In this notebook** we will demonstrate the following topics:<br>
@@ -32,20 +49,3 @@ We will build a _Docker Container Image_ for a trained model and deploy to _Azur
 
 #### Step 7: `Live scoring` Demo: Make a prediction against the live API endpoint
 We use an _HTTP call_ and _Postman_ to make a prediction against a test payload.
-
-# Primary components
-We're going to demo the three **core** components that make up mlflow: <br>
-![MLflow](https://i.imgur.com/vulSrq4.png).<br>
-  
-**Note**: you don't have to use all three, each feature can be used independently. <br>
-  
-#### Tracking
-This allows us to **log all aspects of the ML process** - like _different hyperparameters_ we tried, _evaluation metrics_, as well as the code we ran - alongside other arbitrary artifacts such as _test data_. <br>
-
-This also provides a _leaderboard-style UI_ that makes it easy to see which model performed the best.
-
-#### Projects
-These are all about **reproducibility and sharing**. They combine _GIT_, the environment/model framework, either _conda_ or _docker_ and the specification that makes the code re-runnable. 
-
-#### Models
-An abstraction that allows us to **create/export models** from any open source framework via the _Tracking_ and _Projects_ abstractions. We can also export them to a standard format that can be deployed to any number of systems. Since most deployment systems use some sort of container based solution (e.g. _AzureML_ or _Sagemaker_), models make easy deployments to these systems - or we can deploy directly to _Kubernetes_ or _Azure Container Registry_.
