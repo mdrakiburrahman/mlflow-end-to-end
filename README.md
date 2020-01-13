@@ -1,5 +1,7 @@
 # mlflow-end-to-end
-MLflow end-to-end demo (tracking, projects, model) with Azure Databricks
+MLflow end-to-end demo (tracking, projects, model) with Azure Databricks.
+
+_This repo contains the content I presented at the MLOps Spark Meetup ([link](https://www.meetup.com/Vancouver-Spark/events/267276221/))._
 
 # Primary components
 We're going to demo the three **core** components that make up mlflow: <br>
