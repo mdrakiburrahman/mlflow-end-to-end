@@ -5,7 +5,7 @@ _This repo contains the content I presented at the MLOps Spark Meetup ([link](ht
 
 # Primary components
 We're going to demo the three **core** components that make up mlflow: <br>
-![MLflow](https://i.imgur.com/vulSrq4.png).<br>
+![MLflow](https://i.imgur.com/vulSrq4.png)<br>
   
 **Note**: you don't have to use all three, each feature can be used independently. <br>
   
